@@ -1,0 +1,26 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=20d15258_002D6579_002D44ff_002D8cda_002D7b54619e45cf/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ConstructorShouldChangeNameToGivenValue" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;MSTest::70CD641C-CEB8-422A-B5AD-4D6711EAB6C7::.NETFramework,Version=v4.8::WpfTesting.Tests.MessageSenderViewModelTests.TestMessageSenderViewModel&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=583237df_002D0703_002D449a_002Da2bc_002Dbba7d8827bad/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CreatingEmptyUserShouldDefaultEmptyName" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;MSTest::70CD641C-CEB8-422A-B5AD-4D6711EAB6C7::.NETFramework,Version=v4.8::WpfTesting.Tests.Class1.CreatingEmptyUserShouldDefaultEmptyName&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c1d37f56_002D2ea5_002D44f7_002Da3c4_002Ddd60ced4f3f4/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ConstructorShouldChangeNameToGivenValue #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;MSTest::70CD641C-CEB8-422A-B5AD-4D6711EAB6C7::.NETFramework,Version=v4.8::WpfTesting.Tests.UserTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::70CD641C-CEB8-422A-B5AD-4D6711EAB6C7::.NETFramework,Version=v4.8::WpfTesting.Tests.MessageSenderViewModelTests.TestMessageSenderViewModel&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::70CD641C-CEB8-422A-B5AD-4D6711EAB6C7::.NETFramework,Version=v4.8::WpfTesting.Tests.MainWindowViewModelTests.TestMessageSenderViewModel&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::70CD641C-CEB8-422A-B5AD-4D6711EAB6C7::.NETFramework,Version=v4.8::WpfTesting.Tests.MainWindowViewModelTests.TestMessageSenderViewModel1&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::70CD641C-CEB8-422A-B5AD-4D6711EAB6C7::.NETFramework,Version=v4.8::WpfTesting.Tests.MainWindowViewModelTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;MSTest::70CD641C-CEB8-422A-B5AD-4D6711EAB6C7::.NETFramework,Version=v4.8::WpfTesting.Tests.MainWindowViewModelNoBindingTests.TestMessageSenderViewModel1&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	
+	
+	
+	</wpf:ResourceDictionary>

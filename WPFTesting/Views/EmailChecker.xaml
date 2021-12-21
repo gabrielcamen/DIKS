@@ -1,0 +1,36 @@
+﻿<Window x:Class="WPFTesting.Views.EmailChecker"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:WPFTesting.Views"
+        xmlns:viewModels="clr-namespace:WPFTesting.ViewModels"
+        mc:Ignorable="d"
+        Title="EmailChecker" Height="250" Width="400"
+        d:DataContext="{d:DesignInstance viewModels:MessageSenderViewModel, IsDesignTimeCreatable = True}"
+        Topmost="True">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2px"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="2px"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2px"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="2px"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel VerticalAlignment="Center" Grid.Row="1" Grid.Column="1">
+            <TextBlock Text="Loading..." Height="30px" Width="75px"
+                     VerticalAlignment="Center"
+                     HorizontalAlignment="Center"/>
+            <ProgressBar Width="300px" Height="15px" VerticalAlignment="Center"
+                         HorizontalAlignment="Center" Value="{Binding EmailPercent}"></ProgressBar>
+            <TextBlock Foreground="Green" FontSize="25px"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Text="{Binding EmailActionResult}"></TextBlock>
+        </StackPanel>
+        
+    </Grid>
+</Window>

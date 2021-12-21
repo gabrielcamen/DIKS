@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFTesting", "WPFTesting\WPFTesting.csproj", "{464A58B4-F35C-4D6F-A4FA-87FCCD3E738C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfTesting.Tests", "WpfTesting.Tests\WpfTesting.Tests.csproj", "{70CD641C-CEB8-422A-B5AD-4D6711EAB6C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApplication1", "WpfApplication1\WpfApplication1.csproj", "{B94C8489-78E5-4D27-B079-4BC7DA784653}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{464A58B4-F35C-4D6F-A4FA-87FCCD3E738C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{464A58B4-F35C-4D6F-A4FA-87FCCD3E738C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{464A58B4-F35C-4D6F-A4FA-87FCCD3E738C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{464A58B4-F35C-4D6F-A4FA-87FCCD3E738C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{248D11B6-44AC-4813-9552-3B3E6910F76C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{248D11B6-44AC-4813-9552-3B3E6910F76C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{248D11B6-44AC-4813-9552-3B3E6910F76C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{248D11B6-44AC-4813-9552-3B3E6910F76C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70CD641C-CEB8-422A-B5AD-4D6711EAB6C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70CD641C-CEB8-422A-B5AD-4D6711EAB6C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70CD641C-CEB8-422A-B5AD-4D6711EAB6C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70CD641C-CEB8-422A-B5AD-4D6711EAB6C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B94C8489-78E5-4D27-B079-4BC7DA784653}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B94C8489-78E5-4D27-B079-4BC7DA784653}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B94C8489-78E5-4D27-B079-4BC7DA784653}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B94C8489-78E5-4D27-B079-4BC7DA784653}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
