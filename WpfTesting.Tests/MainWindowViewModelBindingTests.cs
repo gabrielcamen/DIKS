@@ -27,7 +27,7 @@ namespace WpfTesting.Tests
             var messageSenderService = new EmailSenderService();
             var messageSenderViewModel = new MessageSenderViewModel(messageSenderService);
             
-            var viewModel = new MainWindowViewModel(userNameChecker, windowService, null);
+            var viewModel = new MainWindowViewModel(userNameChecker, windowService, null, null);
             //Act
             viewModel.OnCheckUser.Execute(null);
             //Assert
@@ -44,7 +44,7 @@ namespace WpfTesting.Tests
             var windowServiceFake = new Mock<IWindowService>();
             var messageSenderViewModel = new Mock<IMessageSenderViewModelFactory>();
             userNameCheckerMock.Setup(m => m.IsUserNameSecure(It.IsAny<string>())).Returns(true);
-            var viewModel = new MainWindowViewModel(userNameCheckerMock.Object, windowServiceFake.Object, messageSenderViewModel.Object);
+            var viewModel = new MainWindowViewModel(userNameCheckerMock.Object, windowServiceFake.Object, messageSenderViewModel.Object, null);
             //Act
             viewModel.OnCheckUser.Execute(null);
             //Assert

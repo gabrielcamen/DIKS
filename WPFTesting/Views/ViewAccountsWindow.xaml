@@ -1,0 +1,17 @@
+﻿<Window x:Class="WPFTesting.Views.ViewAccountsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:WPFTesting.Views"
+        xmlns:viewModels="clr-namespace:WPFTesting.ViewModels"
+        mc:Ignorable="d"
+        Title="ViewAccountsWindow" Height="450" Width="800"
+        d:DataContext="{d:DesignInstance viewModels:IViewAccountsViewModel, IsDesignTimeCreatable = True}">
+    <Grid>
+        <ListBox Name="ItemsListBox" HorizontalAlignment="Center" VerticalAlignment="Center" Width="600" Height="300"
+                 Background="Honeydew" ItemsSource="{Binding Accounts}" IsSynchronizedWithCurrentItem="True"
+                 DisplayMemberPath="Email">
+        </ListBox>
+    </Grid>
+</Window>

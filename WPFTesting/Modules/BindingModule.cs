@@ -1,6 +1,7 @@
 ﻿using Ninject.Extensions.Factory;
 using Ninject.Modules;
 using WPFTesting.Models.Interfaces;
+using WPFTesting.Repository;
 using WPFTesting.Services;
 using WPFTesting.Services.Interfaces;
 using WPFTesting.ViewModels;
@@ -23,6 +24,11 @@ namespace WPFTesting.Modules
 
             Bind<IMessageSenderService>().To<PhoneMessageSenderService>().WhenAnyAncestorNamed("name").InSingletonScope();
             Bind<IMessageSenderService>().To<EmailSenderService>().WhenInjectedExactlyInto<MessageSenderViewModel>().InTransientScope();
+
+            Bind<IAccountsRepository>().To<AccountsRepository>();
+
+            Bind<IViewAccountsViewModel>().To<ViewAccountsViewModel>();
+            Bind<IViewAccountsViewModelFactory>().ToFactory();
         }
     }
 }

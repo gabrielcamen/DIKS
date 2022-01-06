@@ -26,6 +26,7 @@
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="3">
             <Button Command="{Binding OnCheckUser}" Width="70px">Check User</Button>
             <Button Command="{Binding OnSendEmail}" Margin="5px 0 0 0 "  Width="70px">Send Email</Button>
+            <Button Command="{Binding OnShowAllUsers}" Margin="5px 0 0 0 "  Width="70px">Show users</Button>
         </StackPanel>
         <TextBlock Grid.Row="4" FontSize="15" Text="{Binding CheckUserResultMessage}" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
     </Grid>
