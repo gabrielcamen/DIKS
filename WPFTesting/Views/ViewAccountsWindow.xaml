@@ -9,9 +9,48 @@
         Title="ViewAccountsWindow" Height="450" Width="800"
         d:DataContext="{d:DesignInstance viewModels:IViewAccountsViewModel, IsDesignTimeCreatable = True}">
     <Grid>
-        <ListBox Name="ItemsListBox" HorizontalAlignment="Center" VerticalAlignment="Center" Width="600" Height="300"
-                 Background="Honeydew" ItemsSource="{Binding Accounts}" IsSynchronizedWithCurrentItem="True"
-                 DisplayMemberPath="Email">
-        </ListBox>
+        <StackPanel>
+            <ListBox Name="ItemsListBox" HorizontalAlignment="Center" VerticalAlignment="Center" Width="600" Height="200"
+                     Background="Honeydew" ItemsSource="{Binding Accounts}" IsSynchronizedWithCurrentItem="True"
+                     DisplayMemberPath="Email">
+            </ListBox>
+            <Grid Margin=" 0 10 0 10" HorizontalAlignment="Center">
+                <Grid.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="Margin" Value="5,5,5,5"></Setter>
+                    </Style>
+                </Grid.Resources>
+                
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Border Grid.Row="0"  Grid.Column="0">
+                    <TextBlock  Margin="0 0 0 0 ">Username</TextBlock>
+                </Border>
+                
+                <Border Grid.Row="1" Grid.Column="0">
+                    <TextBlock >Password</TextBlock>
+                </Border>
+                
+                <Border Grid.Row="2" Grid.Column="0">
+                <TextBlock >Email</TextBlock>
+                </Border>
+                <TextBox Text="{Binding NewAccount.Username}" Grid.Row="0" Margin="5 5 5 5" Grid.Column="1" Width="200px"></TextBox>
+                <TextBox Text="{Binding NewAccount.Password}" Grid.Row="1" Margin="5 5 5 5" Grid.Column="1"></TextBox>
+                <TextBox Text="{Binding NewAccount.Email}" Grid.Row="2" Margin="5 5 5 5" Grid.Column="1" ></TextBox>
+            </Grid>
+            <Button Command="{Binding AddUserCommand}"
+                    CommandParameter="" Width="100px" Foreground="White" Background="Black">Add user</Button>
+        </StackPanel>
+        
+        
+        
+        
     </Grid>
 </Window>
